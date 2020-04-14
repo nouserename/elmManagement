@@ -52,7 +52,7 @@ export const getCategory = restaurant_id => fetch('/shopping/getcategory/' + res
 /**
  * category 种类列表
  */
-export const foodCategory = () => fetch('/shopping/v2/restaurant/category');
+export const foodCategory = ( ) => fetch('/shopping/v2/restaurant/category');
 /**
  * 获取餐馆列表
  */
@@ -121,3 +121,15 @@ export const getUserInfo = user_id => fetch('/v1/user/' + user_id);
  * 获取地址信息
  */
 export const getAddressById = address_id => fetch('/v1/addresse/' + address_id);
+/**
+ * 添加商铺
+ */
+export const addShop = data => fetch('/shopping/addShop', data, 'POST');
+/**
+ * 添加食品种类
+ */
+export const addCategory = data => fetch('/shopping/addcategory', data, 'POST');
+/**
+ * 添加食品
+ */
+export const addFood = data => fetch('/shopping/addfood', data, 'POST');

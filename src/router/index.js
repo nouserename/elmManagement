@@ -10,6 +10,8 @@ const shopList = () => import('../page/shopList')
 const foodList = () => import('../page/foodList')
 const orderList = () => import('../page/orderList')
 const adminList = () => import('../page/adminList')
+const addShop = () => import('../page/addShop')
+const addGoods = () => import('../page/addGoods')
 
 
 const routes = [{
@@ -24,7 +26,15 @@ const routes = [{
         path: '',
         redirect: '/userList'
       },
-    {
+      {
+        path: '/addShop',
+        component: addShop,
+        meta: ['添加数据', '添加商铺'],
+      }, {
+        path: '/addGoods',
+        component: addGoods,
+        meta: ['添加数据', '添加商品'],
+      }, {
         path: '/userList',
         component: userList,
         meta: ['数据管理', '用户列表'],
@@ -44,6 +54,16 @@ const routes = [{
         path: '/adminList',
         component: adminList,
         meta: ['数据管理', '管理员列表'],
+      },
+      {
+        path: '/addShop',
+        component: addShop,
+        meta: ['添加数据', '添加店铺'],
+      },
+      {
+        path: '/addGoods',
+        component: addGoods,
+        meta: ['添加数据', '添加商品'],
       }
     ]
   }
