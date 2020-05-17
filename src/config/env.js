@@ -14,8 +14,8 @@ if (process.env.NODE_ENV == 'development') {
 	baseUrl = '';
     baseImgPath = '/img/';
 }else{
-	baseUrl = '//localhost:8888';
-    baseImgPath = '//localhost:8888/img/';
+	baseUrl = '//39.106.104.0:8888';
+    baseImgPath = '//39.106.104.0:8888/img/';
 }
 
 export {
